@@ -1,0 +1,17 @@
+body{background-color: #ffffff}
+
+h1{color: rgb(0, 0, 0); 
+    text-align: center;}
+
+p{
+    color: rgb(0, 0, 0); 
+    text-align: justify; 
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+.formula{
+    color:rgb(0, 0, 0);
+    text-align:center;
+    background-color: rgb(253, 253, 129);
+    font-size: 2em;
+    border: 1px solid black;
+    }
