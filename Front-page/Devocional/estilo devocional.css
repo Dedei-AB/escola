@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Aton';
+    src: url('../fonte/Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+.cabeçalho {
+    text-align: center;
+    font-family: "Aton";
+    color: violet;
+
+}
