@@ -4,9 +4,60 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Nunito-Italic';
+    src: url('../fonte/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Nunito';
+    src: url('../fonte/Nunito-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Manuscrito';
+    src: url('../fonte/ShadowsIntoLight-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .cabeçalho {
     text-align: center;
-    font-family: "Aton";
-    color: violet;
+    font-size: 0.8em;
+}
 
+.título{
+    text-align: center;
+    font-family: "Aton";
+    text-transform: uppercase;
+}
+
+.versículo{
+    text-align: center;
+    font-family: "Manuscrito";
+    font-size: 1.3em;
+}
+
+.texto{
+    text-align: justify;
+    font-family: "Nunito";
+    font-size: 1.1em;
+    line-height: 1.5;
+}
+
+.importante{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    color: green;
+}
+
+.desafio{
+    text-align: center;
+    font-family: "Nunito-Italic";
+    font-style: italic;
+    background-color: rgba(128, 128, 128, 0.737);
+    border: 1px solid black;
 }
