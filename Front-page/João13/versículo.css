@@ -23,41 +23,34 @@
     font-style: normal;
 }
 
-.cabeçalho {
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+h1{
+    font-family: "Aton";
     text-align: center;
-    font-size: 0.8em;
 }
 
-.título{
-    text-align: center;
+h2{
     font-family: "Aton";
-    text-transform: uppercase;
+    text-align: justify;
+}
+
+.Jesus{
+    font-family: "Roboto Condensed", sans-serif;
+    text-align: justify;
+    text-indent: 1em;
+    color: red;
 }
 
 .versículo{
-    text-align: center;
-    font-family: "Manuscrito";
-    font-size: 1.3em;
-}
-
-.texto{
+    font-family: "Roboto Condensed", sans-serif;
     text-align: justify;
-    font-family: "Nunito";
-    font-size: 1.1em;
-    line-height: 1.5;
+    text-indent: 1em;
 }
 
-.importante{
-    text-align: center;
-    font-weight: bold;
-    font-size: 1.4em;
-    color: green;
-}
-
-.desafio{
-    text-align: center;
-    font-family: "Nunito-Italic";
-    font-style: italic;
-    background-color: rgba(128, 128, 128, 0.737);
-    border: 1px solid black;
+sup{
+    color: black;
+    font-weight: bolder;
 }
