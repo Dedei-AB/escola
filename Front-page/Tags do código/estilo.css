@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    font-size:medium;
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.exemplo {
+    color: brown;
+}
+
+pre{
+    color: white
+    ;
+}
+code{
+    color: white;
+}
