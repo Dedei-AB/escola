@@ -1,25 +1,35 @@
+@font-face {
+    font-family: 'Aton';
+    src: url('../fonte/Anton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 h1 {
+    font-family: 'Aton';
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
 }
 
 h2 {
-    font-size:medium;
-    color: white;
+    font-size: larger;
+    color: rgb(0, 0, 0);
 }
 
 p{
-    color: white;
+    color: rgb(0, 0, 0);
 }
+
 
 .exemplo {
     color: brown;
+    font-family: 'Aton';
 }
 
 pre{
-    color: white
+    color: rgb(0, 0, 0)
     ;
 }
 code{
-    color: white;
+    color: rgb(0, 0, 0);
 }
