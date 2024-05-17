@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <title>Página que recebeu os parâmetros</title>
+</head>
+
+<body>
+    <?php
+
+    /* Usando métodos de envio: $_GET, $_POST, $_PUT, $_DELETE*/
+
+    if (isset($_GET["email"]) and !empty($_GET["email"])) {
+        $email = $_GET["email"];
+    } else {
+        $email = "???";
+    }
+
+    if (isset($_GET["nome"]) and !empty($_GET["nome"])) {
+        $nome = $_GET["nome"];
+    } else {
+        $nome = "???";
+    }
+
+    if (isset($_GET["sexo"]) and !empty($_GET["sexo"])) {
+        $sexo = $_GET["sexo"];
+    } else {
+        $sexo = "???";
+    }
+
+    if (isset($_GET["data"]) and !empty($_GET["data"])) {
+        $data = $_GET["data"];
+    } else {
+        $data = "???";
+    }
+
+
+    echo "<p>O meu nome é $nome, meu email é $email, sou do sexo $sexo e cadastrei-me em $data</p>"
+
+
+
+    ?>
+</body>
+
+</html>
