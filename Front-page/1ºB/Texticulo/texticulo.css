@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    background-color: black;
+}
+.letras{
+    align-items: center
+}
+
+div{ display:block}
+span{
+    text-align: center;
+    align-items: center;
+    color: white;
+}
+p{
+    color: white;
+    font-family: 'Roboto';
+    font-size: 28px;
+    letter-spacing: 2.4px;
+    font-weight: 350;
+}
+.x{
+    color: #FF0266;
+    animation: transicao 1s linear infinite;
+}
+@keyframes transicao{
+    0%{color:#FF0266;}
+    20%{color: #03DAC6;}
+    90%{color: #FF0266}
+}
+
+@keyframes branco{
+    0%{color: red;}
+    25%{color: white;}
+    75%{color: red;}
+}
+
+h1:hover{
+    color: #FF0266;
+    transform: translateY(-12px);
+}
+h1{
+    transition: all 320ms;
+    text-transform: uppercase;
+    letter-spacing: 4.8px;
+    font-family: 'Josefin Sans';
+    color: #03DAC6;
+    font-size: 61px;
+    display: block;
+    margin: 0px;
+    display: inline-block;
+    align-items: center
+}
+div{
+    align-items: center
+}
+h2{
+    letter-spacing: 10px;
+    color: red;
+    font-family: 'Roboto';
+    font-weight: 350;
+    transition: all 320ms;
+    font-size: 24px;
+    animation: branco 1s linear infinite;
+    display:inline-block;
+    text-align: center;
+}
+
+
+h2:hover{
+    transform: translateY(-12px);
+}
