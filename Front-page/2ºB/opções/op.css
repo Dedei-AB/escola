@@ -5,6 +5,8 @@
 :root{
     --cor-menu: #a53f2b;
     --cor-pag1: #F0FFCE;
+    --cor-pag2: #d7ff7b;
+    --cor-pag3: #c5ff3f;
     --fonte-marca: 35px 'BuzzFood';
 }
 *{
@@ -15,6 +17,16 @@
 
 .container{
     background-color: var(--cor-pag1);
+    width: 100vw;
+    height: 100vh;
+}
+.container2{
+    background-color: var(--cor-pag2);
+    width: 100vw;
+    height: 100vh;
+}
+.container3{
+    background-color: var(--cor-pag3);
     width: 100vw;
     height: 100vh;
 }
