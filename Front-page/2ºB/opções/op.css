@@ -38,6 +38,9 @@
     justify-content: space-around;
     align-items: center;
 }
+a{
+    text-decoration: none;
+}
 
 .menu{
     display: flex;
@@ -104,4 +107,11 @@ p{
 p:hover{
     transform: translateY(-10px);
     transition: all 320ms;
+}
+.home{
+    display: flex;
+    align-items:center;
+}
+p{
+    display: flow-root;
 }
