@@ -1,0 +1,16 @@
+:root{
+    --cor-menu: #a53f2b;
+    --cor-pag1: #F0FFCE;    
+    --cor-pag2: #d7ff7b;
+    --cor-pag3: #ccc9a1;
+    --fonte-marca: 35px 'BuzzFood';
+} 
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.container1{
+    background-color: var(--cor-pag1);
+    height: 100vh;
+    width: 100vw;
+}
