@@ -1,9 +1,8 @@
 :root{
-    --cor-menu: #a53f2b;
-    --cor-pag1: #F0FFCE;    
+    --cor-menu: #FBF2C0;
+    --cor-pag1: #ffffff;    
     --cor-pag2: #d7ff7b;
     --cor-pag3: #ccc9a1;
-    --fonte-marca: 35px 'BuzzFood';
 } 
 *{
     padding: 0px;
@@ -13,4 +12,43 @@
     background-color: var(--cor-pag1);
     height: 100vh;
     width: 100vw;
+}
+.cabecalho{
+    height: 80px;
+    background-color: var(--cor-menu);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.marca{
+    width: 151px;
+    height: 40px;
+    justify-content: right;
+    text-align: right;
+    padding: 25px 15px;
+    color: white;
+    font:var(--fonte-marca);
+    display: inline-flex;
+
+}
+
+a{
+    text-decoration: none;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+}
+.menu ul{
+    display: flex;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.menu li{
+    list-style: none;
+}
+.menu a{
+    display: inline-block;
+    padding: 25px 15px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
