@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const button = document.querySelector('.sound-button');
+    const button = document.querySelector('.box1');
     const sound = document.getElementById('hover-sound');
 
     button.addEventListener('mouseenter', function () {
