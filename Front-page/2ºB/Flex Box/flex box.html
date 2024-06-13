@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unidades de Medidas</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    .box{
+        width: 30px;
+        height: 30px;
+        background-color: rgb(179, 0, 255);
+        border: 1px solid rgb(0, 0, 0);
+    }
+    .container{
+        gap: 10px;
+        display: flex;   
+
+    }
+    .azul{
+        background-color: blue;
+        order: 1;
+        flex-grow: 1;
+    }
+    .verde{
+        background-color: green;
+        order: 2;
+        flex-grow: 2;
+    }
+    .vermelho{
+        background-color: red;
+        order: 3;
+        flex-grow: 1;
+    }
+
+</style>
+<body>
+    <div class =  'container'>
+        <div class = "box azul">1</div>
+        <div class = "box verde">2</div>
+        <div class = "box vermelho">3</div>
+    </div>
+</body>
+</html>

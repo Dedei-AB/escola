@@ -1,12 +1,32 @@
+.satisfy-regular {
+    font-family: "Satisfy", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
 :root{
-    --cor-menu: #FBF2C0;
-    --cor-pag1: #ffffff;    
+    --cor-menu: #ffffff;
+    --cor-pag1: #202020;    
     --cor-pag2: #d7ff7b;
     --cor-pag3: #ccc9a1;
 } 
 *{
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
+}
+.voltar{
+    width: 55px;
+    height: 55px;
+    background-image: url(https://tenosoftsistemas.com.br/portal/v81/_lib/img/sys__NM__img__NM__topo.png);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: 0.5s;
+    cursor: pointer;}
+.voltar:hover{
+    transform: translateY(-10px);
 }
 .container1{
     background-color: var(--cor-pag1);
@@ -21,8 +41,7 @@
     align-items: center;
 }
 .marca{
-    width: 151px;
-    height: 40px;
+    
     justify-content: right;
     text-align: right;
     padding: 25px 15px;
@@ -51,4 +70,24 @@ a{
     padding: 25px 15px;
     text-decoration: none;
     color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+.menu a:hover{
+
+    border-bottom-left-radius: 16%;
+    border-bottom-right-radius: 16%;
+    border: 3px solid black;
+    transition: 0,5s;
+}
+
+.container2{
+    background-color: var(--cor-pag2);
+    height: 100vh;
+    width: 100vw;
+}
+
+.container3{
+    background-color: var(--cor-pag3);
+    height: 100vh;
+    width: 100vw;
 }
