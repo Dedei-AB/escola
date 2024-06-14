@@ -1,13 +1,10 @@
-.satisfy-regular {
-    font-family: "Satisfy", cursive;
-    font-weight: 400;
-    font-style: normal;
-  }
 :root{
-    --cor-menu: #ffffff;
-    --cor-pag1: #202020;    
-    --cor-pag2: #d7ff7b;
+    --cor-menu: #212121;
+    --cor-pag1: #6994cd;    
+    --cor-pag2: #f7fda0;
     --cor-pag3: #ccc9a1;
+    --cor-texto-menu: #ffffff;
+    --fonte-marca: 20px 'Playwrite VN'
 } 
 *{
     padding: 0px;
@@ -24,7 +21,8 @@
     bottom: 10px;
     right: 10px;
     transition: 0.5s;
-    cursor: pointer;}
+    cursor: pointer;
+}
 .voltar:hover{
     transform: translateY(-10px);
 }
@@ -34,60 +32,89 @@
     width: 100vw;
 }
 .cabecalho{
-    height: 80px;
+    height: 14vh;
+    width: auto;
     background-color: var(--cor-menu);
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 .marca{
-    
     justify-content: right;
-    text-align: right;
-    padding: 25px 15px;
-    color: white;
-    font:var(--fonte-marca);
+    text-align: center;
+    color: var(--cor-texto-menu);
+    font: var(--fonte-marca);
     display: inline-flex;
-
+    display: flex;
+    background-color: var(--cor-menu);
+    padding: 15px 15px;
 }
-
 a{
     text-decoration: none;
 }
 .menu{
     display: flex;
-    justify-content: center;
+    justify-content: right;
+    align-items: center;
 }
 .menu ul{
     display: flex;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: var(--cor-menu);
 }
 .menu li{
     list-style: none;
+    background-color: var(--cor-menu);
 }
 .menu a{
     display: inline-block;
     padding: 25px 15px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
-    transition: 0.5s;
+    color: var(--cor-texto-menu);
+    transition: 0.3s;
 }
 .menu a:hover{
-
-    border-bottom-left-radius: 16%;
-    border-bottom-right-radius: 16%;
-    border: 3px solid black;
-    transition: 0,5s;
+    
+    border-radius: 15%;
+    border: 2px solid var(--cor-texto-menu);
+    transition: 0,25s;
 }
+#page1{
+    height: 86vh;
+    display: flex;
+    background-image: url('https://mtracks.azureedge.net/public/images/artists/hero/2420/1362.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#page1 img{
+    height: 200px;
+    align-items: end;
+}
+.circulo1{
+    height: 200px;
+    width: 200px;
+    border: 0.7em solid white ;
+    border-radius: 50%;
+    background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_nR4plSzv2RkzLw-4FQiBbrTQeRQ1YRZ2N1tnJsipQW7g=s900-c-k-c0x00ffffff-no-rj');
+    background-position: center;
+    background-size: cover;
 
+}
 .container2{
     background-color: var(--cor-pag2);
     height: 100vh;
     width: 100vw;
 }
-
+#page2{
+    background-color: var(--cor-pag2);
+}
 .container3{
     background-color: var(--cor-pag3);
     height: 100vh;
     width: 100vw;
+}
+#page3{
+    background-color: var(--cor-pag3);
 }
