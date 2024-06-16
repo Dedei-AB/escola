@@ -5,15 +5,15 @@
     font-style: normal;
 }
 :root{
-    --cor-menu: #212121;
+    --cor-menu: #000000;
     --cor-pag1: #6994cd;    
     --cor-pag2: #f7fda0;
     --cor-pag3: #ccc9a1;
     --cor-texto-menu: #ffffff;
-    --cor-glorificar: #b9b09f;
-    --cor-edificar: #fff6ea;
-    --fonte-marca: 20px 'Playwrite VN';
-    --fonte-texto: 20px 'Casta';
+    --cor-glorificar: #ffffff;
+    --fonte-marca: 1.56rem 'Playwrite VN';
+    --fonte-subtitulo: 2.19rem 'Casta';
+    --fonte-texto: 1rem 'Carme';
 } 
 *{
     padding: 0px;
@@ -56,7 +56,6 @@
     font: var(--fonte-marca);
     display: inline-flex;
     display: flex;
-    background-color: var(--cor-menu);
     padding: 15px 15px;
 }
 a{
@@ -93,29 +92,51 @@ a{
     height: 86vh;
     display: flex;
     align-items: center;
+    justify-content: center;
+    align-content: space-between;
     background-image: url('https://mtracks.azureedge.net/public/images/artists/hero/2420/1362.jpg');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
-#page1 img{
-    height: 200px;
-    align-items: end;
+.perfis{
+    height: 2.5rem;
+    width: 100vw;
+    display: flex;
 }
 .circulo1{
-    height: 200px;
-    width: 200px;
-    margin-right: 6.25rem;
+    height: 12.5rem;
+    width: 12.5rem;
     border: 0.7em solid white ;
     border-radius: 50%;
-    background-image: url('https://yt3.googleusercontent.com/ytc/AIdro_nR4plSzv2RkzLw-4FQiBbrTQeRQ1YRZ2N1tnJsipQW7g=s900-c-k-c0x00ffffff-no-rj');
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrdDEzkVaviau7S6Y7Xpl1kjgIB6WUKrP-Ig&s');
     background-position: center;
     background-size: cover;
 
 }
-#page1 p{
-    font: var(--fonte-texto);
+.glorificar{
+    color: var(--cor-glorificar);
+    font: var(--fonte-subtitulo);
+    margin-left: 7rem;
+}
+.youtube{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#img_youtube{
+    height: 40px;
+    width: 40px;
+}
+.instagram{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+#img_instagram{
+    height: 35px;
+    width: 35px;
 }
 .container2{
     background-color: var(--cor-pag2);
