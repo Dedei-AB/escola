@@ -30,8 +30,8 @@
     --fonte-subtitulo: 2.19rem 'Casta';
     --fonte-texto: 1rem 'Carme';
     --fonte-album: 1rem 'RobotoMono';
-    --fonte-filme: 3.3rem "Bebas", sans-serif;
-    --fonte-filme2: 2rem "Bebas", sans-serif;
+    --fonte-filme: 3.3rem "Bebas";
+    --fonte-filme2: 2rem "Bebas";
 } 
 *{
     padding: 0px;
