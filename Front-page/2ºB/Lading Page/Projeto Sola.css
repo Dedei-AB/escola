@@ -55,7 +55,7 @@
     width: 100vw;
 }
 .cabecalho{
-    height: 14vh;
+    height: 12vh;
     width: 100%;
     background-color: var(--cor-menu);
     display: flex;
@@ -79,7 +79,7 @@ a{
 }
 .menu{
     width: 100%;
-    height: 14vh;
+    height: 12vh;
     display: flex;
     justify-content: center;
     align-items: center;
