@@ -16,7 +16,7 @@
     --cor-menu: #000000;
     --cor-pag1: #6994cd;    
     --cor-pag2: #f7fda0;
-    --cor-pag3: #0c1015;
+    --cor-pag3: #050608;
     --cor-pag4: rgb(63, 63, 63);
     --cor-album: #344454;
     --cor-texto-menu: #ffffff;
@@ -26,6 +26,8 @@
     --fonte-subtitulo: 2.19rem 'Casta';
     --fonte-texto: 1rem 'Carme';
     --fonte-album: 1rem 'RobotoMono';
+    --fonte-filme: 3.3rem "Bebas Neue", sans-serif;
+    --fonte-filme2: 2rem "Bebas Neue", sans-serif;
 } 
 *{
     padding: 0px;
@@ -108,7 +110,7 @@ a{
     transition: 0.3s;
 }   
 #page1{
-    height: 86vh;
+    height: 88vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -182,6 +184,7 @@ a{
     display: flex;
 }
 .caixa{
+    width: 222px;
     flex-direction: column;
     display: flex;
     align-items: center;
@@ -200,7 +203,8 @@ a{
     height: 200px;
     width: 200px;
     background-color: var(--cor-album);
-    margin-left: 2rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -232,11 +236,26 @@ a{
 }
 .container3{
     background-color: var(--cor-pag3);
-    height: 100vh;
+    height: 150vh;
     width: 100vw;
 }
-#page3{
+.page3{
     background-color: var(--cor-pag3);
+    height: 150vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.filme{
+    font: var(--fonte-filme);
+    color: white;
+}
+.filme2{
+    font: var(--fonte-filme2);
+    color: rgb(255, 144, 47);
+    margin-bottom: 1.5rem;
 }
 .container4{
     background-color: var(--cor-pag4);
