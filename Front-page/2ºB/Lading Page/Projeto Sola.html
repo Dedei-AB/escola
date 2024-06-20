@@ -32,9 +32,8 @@
         </div>
         
         <div id ="page1">
-            <a href="https://youtube.com/@projetosola?si=kUIzF5fw9I7wfjk3">
-                <div class = 'circulo1'></div>
-            </a>
+                <div class = 'circulo1' id="circulinho" onclick="tocar()"></div>
+                <audio id ='colossenses' src="/Front-page/Colossenses 1 - Single _ Projeto Sola (320).mp3" loop></audio>
             <p class = 'glorificar'>"GLORIFICAR CRISTO<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;EDIFICAR A IGREJA."</p>
         </div>
 
@@ -90,5 +89,19 @@
             </div>
         </div>
     </div>
+    <script>
+        const audio =document.getElementById('colossenses')
+        const circulo = document.getElementById('circulinho')
+        function tocar(){
+            if(!audio.paused){
+                circulo.classList.remove('girando')
+                audio.pause()
+            }
+            else{
+                circulo.classList.add('girando')
+                audio.play()
+            }   
+        }
+    </script>
 </body>
 </html>

@@ -131,11 +131,22 @@ a{
     background-position: center;
     background-size: cover;
     transition: 0.5s;
+    cursor: pointer;
+    transition: 1s;
 }
-.circulo1:hover{
-    transform: translateY(-0.625rem);
-    transition: 0.5s;
+.girando{
+    animation: girar 5s infinite linear;
+    background-image: url('/Front-page/2ºB/record-disk-clipart-design-illustration-free-png.png');
 }
+@keyframes girar{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
 .glorificar{
     color: var(--cor-glorificar);
     font: var(--fonte-subtitulo);
