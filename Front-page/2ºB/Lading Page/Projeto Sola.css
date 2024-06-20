@@ -12,6 +12,10 @@
     font-family: 'RobotoMono';
     src: url('/Front-page/fonte/RobotoMono-VariableFont_wght.ttf');
 }
+@font-face {
+    font-family: 'Bebas';
+    src: url('/Front-page/fonte/BebasNeue-Regular.ttf');
+}
 :root{
     --cor-menu: #000000;
     --cor-pag1: #6994cd;    
@@ -26,8 +30,8 @@
     --fonte-subtitulo: 2.19rem 'Casta';
     --fonte-texto: 1rem 'Carme';
     --fonte-album: 1rem 'RobotoMono';
-    --fonte-filme: 3.3rem "Bebas Neue", sans-serif;
-    --fonte-filme2: 2rem "Bebas Neue", sans-serif;
+    --fonte-filme: 3.3rem "Bebas", sans-serif;
+    --fonte-filme2: 2rem "Bebas", sans-serif;
 } 
 *{
     padding: 0px;
