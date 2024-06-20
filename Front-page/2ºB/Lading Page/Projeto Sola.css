@@ -71,6 +71,9 @@
     display: flex;
     padding: 0.9375rem 0.9375rem;
 }
+.marca p{
+    font: var(--fonte-marca);
+}
 a{
     text-decoration: none;
 }
