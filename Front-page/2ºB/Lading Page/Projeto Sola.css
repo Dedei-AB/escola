@@ -9,10 +9,6 @@
     src: url('/Front-page/fonte/Carme-Regular.ttf');
 }
 @font-face {
-    font-family: 'PlaywriteRO';
-    src: url('/Front-page/fonte/PlaywriteRO-VariableFont_wght.ttf');
-}
-@font-face {
     font-family: 'RobotoMono';
     src: url('/Front-page/fonte/RobotoMono-VariableFont_wght.ttf');
 }
@@ -26,7 +22,7 @@
     --cor-texto-menu: #ffffff;
     --cor-texto-menu-hover: #942621;
     --cor-glorificar: #ffffff;
-    --fonte-marca: 1.56rem 'PlaywriteRO';
+    --fonte-marca: 1.56rem 'Playwrite ES';
     --fonte-subtitulo: 2.19rem 'Casta';
     --fonte-texto: 1rem 'Carme';
     --fonte-album: 1rem 'RobotoMono';
