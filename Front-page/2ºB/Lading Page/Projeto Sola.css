@@ -20,8 +20,8 @@
     --cor-menu: #000000;
     --cor-pag1: #6994cd;    
     --cor-pag2: #f7fda0;
-    --cor-pag3: #344454;
-    --cor-pag4: ;
+    --cor-pag3: #0c1015;
+    --cor-pag4: rgb(63, 63, 63);
     --cor-album: #344454;
     --cor-texto-menu: #ffffff;
     --cor-texto-menu-hover: #942621;
@@ -133,7 +133,11 @@ a{
     background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrdDEzkVaviau7S6Y7Xpl1kjgIB6WUKrP-Ig&s');
     background-position: center;
     background-size: cover;
-
+    transition: 0.5s;
+}
+.circulo1:hover{
+    transform: translateY(-0.625rem);
+    transition: 0.5s;
 }
 .glorificar{
     color: var(--cor-glorificar);
@@ -183,6 +187,11 @@ a{
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: 0.5s;
+}
+.caixa:hover{
+    transform: translateY(-1rem);
+    transition: 0.5s;
 }
 .album{
     font: var(--fonte-album);
@@ -192,7 +201,7 @@ a{
     height: 200px;
     width: 200px;
     background-color: var(--cor-album);
-    margin: 2rem;
+    margin-left: 2rem;
     border-radius: 20px;
     display: flex;
     justify-content: center;
@@ -229,4 +238,14 @@ a{
 }
 #page3{
     background-color: var(--cor-pag3);
+}
+.container4{
+    background-color: var(--cor-pag4);
+    height: 25vh;
+    width: 100%;
+}
+.page4{
+    background-color: var(--cor-pag4);
+    height: 25vh;
+    width: 100%;
 }
