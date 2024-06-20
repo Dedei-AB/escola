@@ -13,7 +13,8 @@
     --cor-pag1: #6994cd;    
     --cor-pag2: #f7fda0;
     --cor-pag3: #050608;
-    --cor-pag4: rgb(63, 63, 63);
+    --cor-pag4: #6c1b17;
+    --cor-pag5: rgb(63, 63, 63);
     --cor-album: #344454;
     --cor-texto-menu: #ffffff;
     --cor-texto-menu-hover: #942621;
@@ -24,6 +25,8 @@
     --fonte-album: 1rem 'Roboto Mono';
     --fonte-filme: 3.3rem "Bebas Neue", sans-serif;
     --fonte-filme2: 2rem "Bebas Neue", sans-serif;
+    --fonte-titulo: 3rem 'Bebas Neue';
+    --fonte-bio: 1.26rem 'Raleway', sans-serif;
 } 
 *{
     padding: 0px;
@@ -74,6 +77,15 @@
 }
 a{
     text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+p{
+    color: rgb(0, 0, 0);
+    font: 0.9rem 'Roboto Mono';
+}
+h1{
+    color: rgb(255, 239, 158);
+    font: 2rem 'Bebas Neue';
 }
 .menu{
     width: 100%;
@@ -264,13 +276,63 @@ a{
     color: rgb(255, 144, 47);
     margin-bottom: 1.5rem;
 }
+.biografia{
+    height: 100%;
+    width: 100%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.biografia h1{
+    font: var(--fonte-titulo);
+}
+.texto_bio{
+    font: var(--fonte-bio);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 .container4{
     background-color: var(--cor-pag4);
-    height: 25vh;
+    height: 130vh;
     width: 100%;
 }
 .page4{
-    background-color: var(--cor-pag4);
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container5{
+    background-color: var(--cor-pag5);
     height: 25vh;
     width: 100%;
+}
+.page5{
+    background-color: var(--cor-pag5);
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.redes{
+    margin-left: 2rem;
+    height: 100px;
+}
+.contatos{
+    margin-left: 2rem;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: right;
+
+}
+.contatos p{
+    display: flex;
 }
