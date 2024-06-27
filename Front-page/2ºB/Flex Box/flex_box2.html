@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .principal{
+            display: flex;
+            flex-direction: column;
+        }
+        aside{
+            height: 100vh;
+            width: 10vw;
+            background-color: lightskyblue;
+            padding: 15px;
+            padding-top: 20px;
+        }
+        header{
+            width: calc(100vw - 10vw);
+            height: 10vh;
+            background-color: lightyellow;
+            padding: 15px;
+        }
+        .oi{
+            display: flex;
+        }
+        main{
+            width: calc(100vw - 10vw);
+            height: calc(90vh - 10vh);
+            background-color: lightgreen;
+            padding: 15px;
+        }
+        footer{
+            width: calc(100vw - 10vw);
+            height: calc(100vh - 90vh);
+            background-color: lightpink;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="oi">
+        <aside>
+            <h1>sidebar</h1>
+        </aside>
+        <div class="principal">
+            <header>
+                <h1>topo</h1>
+            </header>
+            <main>
+                <h1>conteudo</h1>
+            </main>
+            <footer>
+                <h1>rodape</h1>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

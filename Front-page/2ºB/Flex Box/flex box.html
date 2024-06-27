@@ -3,47 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Unidades de Medidas</title>
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        header{
+            width: 100vw;
+            height: 10vh;
+            background-color: yellow;
+            padding: 10px;
+        }
+        aside{
+            height: calc(90vh - 10vh);
+            width: 15vw;
+            background-color: lightskyblue;
+            padding: 10px;
+        }
+        main{
+            height: calc(90vh - 10vh);
+            width: calc(100vw - 15vw);
+            background-color: lightgreen;
+            padding: 10px;
+        }
+        footer{
+            width: 100vw;
+            height: calc(100vh - 90vh);
+            background-color: lightpink;
+            padding: 10px;
+        }
+        .oi{
+            display: flex;
+        }
+
+    </style>
 </head>
-<style>
-    *{
-        margin: 0px;
-        padding: 0px;
-        box-sizing: border-box;
-    }
-    .box{
-        width: 30px;
-        height: 30px;
-        background-color: rgb(179, 0, 255);
-        border: 1px solid rgb(0, 0, 0);
-    }
-    .container{
-        gap: 10px;
-        display: flex;   
-
-    }
-    .azul{
-        background-color: blue;
-        order: 1;
-        flex-grow: 1;
-    }
-    .verde{
-        background-color: green;
-        order: 2;
-        flex-grow: 2;
-    }
-    .vermelho{
-        background-color: red;
-        order: 3;
-        flex-grow: 1;
-    }
-
-</style>
 <body>
-    <div class =  'container'>
-        <div class = "box azul">1</div>
-        <div class = "box verde">2</div>
-        <div class = "box vermelho">3</div>
+    <header>
+        <h1>topo</h1>
+    </header>
+    <div class="oi">
+        <aside>
+            <h1>sidebar</h1>
+        </aside>
+        <main>
+            <h1>conteudo</h1>
+        </main>
     </div>
+    <footer>
+        <h1>rodape</h1>
+    </footer>
 </body>
 </html>
