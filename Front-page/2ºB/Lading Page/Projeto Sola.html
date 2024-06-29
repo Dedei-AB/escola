@@ -63,6 +63,11 @@
                     <div class = 'albuns' id = 'Advento'></div>
                     <p class = 'album'>Advento</p>
             </a>
+
+            <a href="https://open.spotify.com/intl-pt/album/7ppJwjV7uJVXDeMkhSJrT3?si=BFIT7PXfQ36cIzF87NB-4ww" class = 'caixa'>
+                <div class = 'albuns' id = 'glorificar_e_edificar'></div>
+                <p class = 'album'>Glorificar Cristo, Edificar a Igreja</p>
+        </a>
         </div>
     </div>
 
@@ -123,19 +128,9 @@
             </div>
         </div>
     </div>
-    <script>
-        const audio =document.getElementById('colossenses')
-        const circulo = document.getElementById('circulinho')
-        function tocar(){
-            if(!audio.paused){
-                circulo.classList.remove('girando')
-                audio.pause()
-            }
-            else{
-                circulo.classList.add('girando')
-                audio.play()
-            }   
-        }
-    </script>
+
+    <audio autoplay>
+        <source src="/Colossenses 1 - Single _ Projeto Sola (320).mp3" type="audio/mp3">
+    </audio>
 </body>
 </html>
