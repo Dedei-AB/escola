@@ -201,6 +201,7 @@ h1{
 }
 .caixa:hover{
     flex: 3;
+    transition: 1s;
 }
 .album{
     font: var(--fonte-album);
