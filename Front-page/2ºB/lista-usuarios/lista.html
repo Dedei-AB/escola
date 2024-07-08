@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários</title>
+</head>
+<style>
+    *{
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+    }
+    .container{
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .list{
+        background-color: rgb(94, 147, 253);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 400px;
+        width: 350px;
+        flex-wrap: wrap;
+        align-content: center;
+        }
+    .list-item{
+        background-color: rgb(255, 255, 255);
+        height: 92.5px;
+        width: 320px;
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        border-top: 1px solid black;
+        padding: 10px;
+        align-items: center;
+    }
+    img{
+        flex-shrink: 0;
+        border-radius: 50%;
+        height: 71px;
+        width: 71px;
+    }
+    .info{
+        flex-grow: 1;
+    }
+    .nome{
+        padding-left: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: black;
+    }
+    .ad{
+        padding-left: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        color: grey;
+    }
+</style>
+<body>
+<div class="container">
+        <ul class="list">
+            <li class="list-item">
+                <img src="https://randomuser.me/api/portraits/women/33.jpg" alt="">
+                <div class="info">
+                <p class="nome">Rhonda Simpson</p>
+                <p class="ad">4249 Blossom Hill Rd</p>
+                </div>  
+            </li>
+            <li class="list-item">
+                <img src="https://randomuser.me/api/portraits/women/85.jpg" alt="">
+                <div class="info">
+                    <p class="nome">Marian Ramirez</p>
+                    <p class="ad">6590 College St</p>
+                </div>
+            </li>
+            <li class="list-item">
+                <img src="https://randomuser.me/api/portraits/men/34.jpg" alt="">
+                <div class="info">
+                    <p class="nome">Connor Holmes</p>
+                    <p class="ad">5737 Bollinger Rd</p>
+                </div>
+            </li>
+            <li class="list-item">
+                <img src="https://randomuser.me/api/portraits/lego/6.jpg" alt="">
+                <div class="info">
+                    <p class="nome">Benjamin Jones</p>
+                    <p class="ad">6120 Harrison Ct</p>
+                </div>
+            </li>
+        </ul>
+</div>
+</body>
+</html>
