@@ -1,0 +1,42 @@
+    @font-face {
+        font-family: 'Comic';
+        src: url(/fonte/comic_helvetic/ComicHelvetic_Light.otf);
+    }
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    div{
+        height: 550px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        table{
+            border-collapse: collapse;
+            font: 1.1rem 'Comic';
+        }
+        td{
+            border: 2px black solid;
+            text-align: center;
+            height: 1rem;
+        }
+        tr {
+            height: 50px;
+        }
+        th{
+            border: 2px black solid;
+            width: 6rem;
+        }
+        .nada{
+            border-top: 1px white solid;
+            border-left: 1px white solid;
+            width: 6rem;
+        }
+        img{
+            height: 30px;
+            width: 30px;
+        }
+        
