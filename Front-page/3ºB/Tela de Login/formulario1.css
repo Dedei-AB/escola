@@ -1,0 +1,195 @@
+@font-face {
+    font-family: 'Gumball';
+    src: url(/Front-page/fonte/Nunito-VariableFont_wght.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Bebas';
+    src: url(/Front-page/fonte/BebasNeue-Regular.ttf);
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(/Front-page/fonte/Poppins-Medium.ttf);
+}
+
+
+:root{
+    --fonte-titulo: 'Bebas';
+    --fonte-h2: 'Gumball';
+    --fonte-a: 'Poppins';
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: right;
+    padding: 1rem;
+    background-color: bisque;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    width: 100%;
+}
+
+h1{
+    font-family: var(--fonte-titulo);
+    font-size: 2.2rem;
+    font-weight: 100;
+}
+
+h2{
+    font-family: var(--fonte-h2);
+    font-size: 0.9rem;
+    font-weight: 100%;
+    margin-bottom: 10px;
+}
+
+p{
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    
+}
+
+a p{
+    text-decoration: none;
+    color: black;
+    font-family: var(--fonte-a);
+    font-size: 0.85rem;
+}
+
+#nome{
+    width: 95%;
+    height: 2rem;
+    
+}
+
+#email{
+    width: 95%;
+    height: 2rem;
+    margin-top: 0.7rem;
+}
+
+input{
+    padding-left: 1rem;
+    border: transparent;
+    border-radius: 5px;
+}
+
+button{
+    width: 95%;
+    height: 2rem;
+    margin-top: 0.5rem;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#linha{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.linha1{
+    width: 45%;
+    height: 0.7px;
+    background-color: rgb(0, 0, 0);
+}
+
+.linha2{
+    width: 40%;
+    height: 0.7px;
+    background-color: rgb(0, 0, 0);
+}
+
+.or{
+    margin: 5px;
+    font-family: var(--fonte-or);
+}
+
+.imagem{
+    background-image: url('https://yt3.googleusercontent.com/zwGBrpC2qIV9k3TmxT12oCI5PPR1N8duTvynSINVOgF6OTY4lAgLf7BeMt1jWowvFQlkY7QB=s900-c-k-c0x00ffffff-no-rj');
+    height: 100%;
+    width: 65%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 1.0625rem;
+    display: flex;
+    align-items: end;
+}
+
+.Sobre{
+    font-family: var(--fonte-a);
+    margin: 1rem;
+}
+
+.continue{
+    width: 100%;
+    height: auto;
+}
+
+.caixa_google{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 95%;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.caixa_apple{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 95%;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.caixa_facebook{
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 95%;
+    height: 2.3rem;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.25rem;
+}
+
+.google{
+    height: 20px;
+    margin: 10px;
+}
+
+.apple{
+    height: 25px;
+    margin: 10px;
+}
+
+.facebook{
+    height: 40px;
+}
