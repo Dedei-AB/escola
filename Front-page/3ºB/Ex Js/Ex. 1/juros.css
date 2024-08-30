@@ -30,6 +30,7 @@ input{
     width: 10rem;
     border-radius: 0.625rem;
     padding-left: 0.5rem;
+    border: 2px solid rgb(90, 121, 121);
 }
 button{
     height: 1.5rem;
