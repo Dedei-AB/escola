@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Vrum Vrum...</title>
+    <link rel="stylesheet" href="./Estrada.css">
+    <script type="module" src="./VrumVrum.js"></script>
 </head>
 <body>
-    
+    <div class="container">
+
+        <h1>Viagem de Carro</h1>
+
+        <div class="conta">
+            <label for="distancia">Distância percorrida:</label>
+            <input type="text" id="distancia">
+            <label for="km/L">Autonomia do Veículo:</label>
+            <input type="text" id="km/L">
+            <label for="combustivel">Valor do Combustível:</label>
+            <input type="text" id="combustivel">
+            <label for="pedagio">Valor do Pedágio:</label>
+            <input type="text" id="pedagio">
+        </div>
+
+        <div id="resultado">0</div>
+
+        <button id="executar">Calcular</button>
+
+    </div>
 </body>
 </html>

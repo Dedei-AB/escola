@@ -1,4 +1,3 @@
-    
     let inputCapital = document.getElementById("capital")
     let inputTempo = document.getElementById("tempo")
     let inputTaxa = document.getElementById("taxa")

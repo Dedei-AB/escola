@@ -12,13 +12,13 @@ function calcularTroco(){
     let nota20 = Number(20)
     let nota10 = Number(10)
     let moeda = Number(1)
-    for (var troco20 = 0; troco>= nota20; troco20 += 1) {
+    for (var troco20 = 0; troco>= nota20; troco20 ++) {
         troco -= 20
     }
-    for (var troco10 = 0; troco>= nota10; troco10 += 1) {
+    for (var troco10 = 0; troco>= nota10; troco10 ++) {
         troco -= 10
     }
-    for (var moeda1 = 0; troco>= moeda; moeda1 += 1) {
+    for (var moeda1 = 0; troco>= moeda; moeda1 ++) {
         troco -= 1
     }
     
