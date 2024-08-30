@@ -5,9 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juros Compostos</title>
     <link rel="stylesheet" href="./juros.css">
-    <script type="module" src="./juros.js"></script>
+    <script src="./juros.js" defer></script>
 </head>
 <body>
-    
+    <div class="container">
+
+        <h1>Juros Compostos</h1>
+
+        <div class="conta">
+            <label for="capital">Capital inicial</label>
+            <input type="text" id="capital">
+            <label for="tempo">Tempo investido(meses)</label>
+            <input type="text" id="tempo">
+            <label for="taxa">Taxa</label>
+            <input type="text" id="taxa">
+        </div>
+
+        <div id="resultado">0</div>
+
+        <button id="executar">Calcular</button>
+
+    </div>
 </body>
 </html>
