@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.roboto-medium {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-family: "Roboto";
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.caixa{
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.cauculo{
+    height: 15.625rem;
+    width: 25rem;
+    background-color: rgb(169, 169, 169);
+    margin: 32px;
+    display: flex;
+    flex-direction: column;
+    padding: 1.3rem;
+    border-radius: 1.25rem;
+}
+.roteiro{
+    background-color: rgb(169, 169, 169);
+    height: 15.625rem;
+    width: 25rem;
+    margin: 2rem;
+    padding: 1.3rem;
+    border-radius: 1.25rem;
+}
+input{
+    height: 1.5rem;
+    width: 10rem;
+    border: 1px solid black;
+    border-radius: 0.625rem;
+    padding-left: 0.5rem;
+    padding-right: 0.3rem;
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 1rem;
+}
+label{
+    font-family: "Roboto";
+}
+button{
+    height: 2rem;
+    width: 6rem;
+    background-color: rgb(0, 0, 0);
+    font: "Roboto" ;
+    color: white;
+    border-radius: 1.25rem;
+    cursor: pointer;;
+}
+h2{
+    margin-bottom: 1.5rem;
+}
+p{
+    margin-bottom: 1rem;
+}
+#valor{
+    background-color: rgba(255, 0, 0, 0.664);
+}

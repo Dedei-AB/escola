@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+    <link rel="stylesheet" href="multas.css">
+    <script type="module" src="./multas.js" defer></script>
+    
+</head>
+<body>
+    <div class="container">
+        <h1>Detran</h1>
+        <div class="caixa">
+                <div class="cauculo">
+                    <label for="velomax">Velocidade máxima da via:</label>
+                    <input type="number" min="0" max="1000" id="velomax" placeholder="km/h">
+                    <label for="veiculo">Velocidade do veículo:</label>
+                    <input type="number" min="0" max="1000" id="veiculo" placeholder="km/h">
+                    <button id="botao">Caucular</button>
+                </div>
+
+                <div class="roteiro">
+                    <h2>Multa por excesso de velocidade:</h1>
+                
+                        <p><strong>R$ 130,16</strong> - Até 20% acima do limite permitido</p>
+                        <p><strong>R$ 195,23</strong> - De 20% até 50% acima do limite permitido</p>
+                        <p><strong>R$ 880,41</strong> - Acima de 50% do limite permitido</p>
+                </div>
+        </div>
+        <h1 id="multa"></h1>
+        <h1 id="valor"></h1>
+        
+    </div>
+</body>
+</html>
