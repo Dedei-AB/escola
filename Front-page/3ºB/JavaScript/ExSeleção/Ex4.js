@@ -5,17 +5,17 @@ function NumPrimo(n){
     console.log(`Irei testar se o número ${n} é primo.\nProcessando...`)
     if (n == 2){
         console.log('O número é primo!')
-    }
-    while (i<n || d == 0){
+    }else{
+    while (i<n && d == 0){
         if (n%i == 0){
             d = 1
         }
         i +=1
     }
     if (d == 0){
-        console.log('O número não é primo.')
+        console.log('O número é primo.')
     }else{
-        console.log('O número é primo!')
-    }
+        console.log('O número não é primo!')
+    }}
 }
-NumPrimo(275384)
+NumPrimo(6)
