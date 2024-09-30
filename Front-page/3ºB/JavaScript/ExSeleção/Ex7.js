@@ -1,5 +1,5 @@
 function carro(valorGasolina, valorAlcool){
-    if (valorGasolina * 0.7 >= valorAlcool){
+    if (valorGasolina * 0.7 > valorAlcool){
         console.log('Ainda compensa usar álcool.')
         return true
     }else{
