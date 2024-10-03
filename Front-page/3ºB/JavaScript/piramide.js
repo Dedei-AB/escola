@@ -10,4 +10,4 @@ function piramide(camadas) {
     }
 }
 
-piramide(10)
+piramide(4)
