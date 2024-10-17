@@ -204,8 +204,8 @@ h1{
     flex-wrap: wrap;
 }
 .caixa:hover{
-    flex: 3;
-    transition: 1s;
+    flex: 1.5;
+    transition: 0.5s;
 }
 .album{
     font: var(--fonte-album);
@@ -226,30 +226,60 @@ h1{
     width: 200px;
     background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Music30/v4/07/44/03/074403f8-c93c-cd8c-e6da-f0e34eb5c63b/mzm.nteuabja.jpg/592x592bb.webp');
     background-size: cover;
+    transition: 0.5s;
+}
+#Volume_1:hover{
+    transition: 0.5s;
+    height: 250px;
+    width: 250px;
 }
 #quinhentos{
     height: 200px;
     width: 200px;
     background-image: url('https://akamai.sscdn.co/uploadfile/letras/albuns/4/d/d/9/612431513711684.jpg');
     background-size: cover;
+    transition: 0.5s;
+}
+#quinhentos:hover{
+    transition: 0.5s;
+    height: 250px;
+    width: 250px;
 }
 #Homem_Liturgico{
     height: 200px;
     width: 200px;
     background-image: url('https://akamai.sscdn.co/uploadfile/letras/albuns/7/5/d/c/937301596206739.jpg');
     background-size: cover;
+    transition: 0.5s;
+}
+#Homem_Liturgico:hover{
+    transition: 0.5s;
+    height: 250px;
+    width: 250px;
 }
 #Advento{
     height: 200px;
     width: 200px;
     background-image: url('https://akamai.sscdn.co/letras/360x360/albuns/8/e/a/f/2078651704463259.jpg');
     background-size: cover;
+    transition: 0.5s;
+}
+#Advento:hover{
+    transition: 0.5s;
+    height: 250px;
+    width: 250px;
 }
 #glorificar_e_edificar{
     height: 200px;
     width: 200px;
     background-image: url('https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/22/7f/a6/227fa61c-27e2-7053-9f89-795fe0948b17/859748548219_cover.jpg/1200x1200bb.jpg');
     background-size: cover;
+    transition: 0.5s;
+}
+#glorificar_e_edificar:hover{
+    transition: 0.5s;
+    height: 250px;
+    width: 250px;
 }
 .container3{
     background-color: var(--cor-pag3);
@@ -313,28 +343,34 @@ h1{
 }
 .page5{
     background-color: var(--cor-pag5);
-    height: 25vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 .redes{
     margin-left: 2rem;
-    height: 100px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
 }
 .contatos{
     margin-left: 2rem;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: left;
-    justify-content: right;
+    justify-content: center;
 
-}
-.contatos p{
-    display: flex;
-    color: white;
-}
-.contatos a{
-    color: white;
+    & p{
+        display: flex;
+        color: white;
+    }
+
+    & a{
+        color: white;
+    }
 }
