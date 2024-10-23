@@ -327,7 +327,7 @@ h1{
 .container4{
     background-color: var(--cor-pag4);
     height: 130vh;
-    width: 100%;
+    width: 100vw;
 }
 .page4{
     height: 120vh;
@@ -339,7 +339,7 @@ h1{
 .container5{
     background-color: var(--cor-pag5);
     height: 25vh;
-    width: 100%;
+    width: 100vw;
 }
 .page5{
     background-color: var(--cor-pag5);
