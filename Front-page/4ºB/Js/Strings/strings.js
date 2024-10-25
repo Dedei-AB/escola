@@ -77,11 +77,39 @@ function toSnakeCase(str){
 
 // 7)
 function capitalizeWords(str){
-    let palavra = str.split(' ')
-    for(let i of palavra){
-        i[0] = i[0].toUpperCase()
-    }
+    let palavras = str.split(' ')
+    for(let i = 0; i<palavras.length; i++){
+        palavras[i] = palavras[i][0].toUpperCase() + palavras[i].slice(1)
+    }return palavras.join(' ')
 }
 
 //console.log(capitalizeWords("hello world")); // Deve exibir: "Hello World"
 //console.log(capitalizeWords("javaScript is awesome")); // Deve exibir: "JavaScript Is Awesome"
+
+// 8)
+function trimSpaces(str){
+    let texto = str.split(/\s+/).join(' ')
+    return texto
+}
+
+//console.log(trimSpaces("   JavaScript    é     divertido    ")); // Deve exibir: "JavaScript é divertido"
+//console.log(trimSpaces("   Programação     é   interessante  ")); // Deve exibir: "Programação é interessante"
+
+// 9)
+function replaceChar(str, oldChar, newChar){
+    let texto = str.split(/\s+/)
+    for(let i = 0; i<texto.length; i++){
+        let textoNovo = ''
+        for(let j = 0; j<texto[i].length; j++){
+            if(texto[i][j]== oldChar){
+                textoNovo += newChar
+            }else{
+                textoNovo += texto[i][j]
+            }
+        }
+        texto[i] = textoNovo
+    } return texto.join(' ')
+}
+
+//console.log(replaceChar("hello world", "l", "z")); // Deve exibir: "hezzo worzd"
+//console.log(replaceChar("banana", "a", "o")); // Deve exibir: "bonono"
