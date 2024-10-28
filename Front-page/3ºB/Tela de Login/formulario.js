@@ -19,12 +19,8 @@ function submitToGoogleForm(){
         method: "POST",
         body: formData,
         mode: "no-cors" // Pode ser mantido como no-cors, mas você não verá a resposta
-    }).then((response) => {
-        if(response.ok){
-            // window.location.href = removerAposUltimaBarra(window.location.href) + "obrigado.html"
-        }else{
-            throw new Error('Email inválido')
-        }
+    }).then(() => {
+            window.location.href = removerAposUltimaBarra(window.location.href) + "obrigado.html"
     }).catch((error) => {
         alert("Erro ao enviar para o Google Form:\n" + error);
     });
