@@ -13,16 +13,20 @@ function submitToGoogleForm(){
 
     const formData = new FormData();
     formData.append("entry.534219487", name);
-    formData.append("entry.680551134", email);
+    formData.append("emailAddress", email);
 
     fetch(formURL, {
         method: "POST",
         body: formData,
         mode: "no-cors" // Pode ser mantido como no-cors, mas você não verá a resposta
-    }).then(() => {
-        window.location.href = removerAposUltimaBarra(window.location.href) + "obrigado.html"
+    }).then((response) => {
+        if(response.ok){
+            // window.location.href = removerAposUltimaBarra(window.location.href) + "obrigado.html"
+        }else{
+            throw new Error('Email inválido')
+        }
     }).catch((error) => {
-        console.error("Erro ao enviar para o Google Form:", error);
+        alert("Erro ao enviar para o Google Form:\n" + error);
     });
 }else{
     console.error("Erro ao enviar para o Google Form");
