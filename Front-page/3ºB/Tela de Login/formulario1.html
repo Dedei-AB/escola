@@ -16,12 +16,13 @@
                 <h1>Advento 2024</h1>
                 <h2>Reserve seu lugar!</h2>
 
-                <form action="" method="post">
-                    <input type="text" name="Nome" id="nome" placeholder="Nome">
-                    <input type="email" name="email" id="email" placeholder="Email address">
-                    <button><p>Continue</p></button>
+                <form id="myForm">
+                    <input type="text" name="Nome" id="nome" placeholder="Nome" required>
+                    <input type="email" name="email" id="email" placeholder="Email address" required>
+                    <button type="button" onclick="submitToGoogleForm()">Continue</button>
                 </form>
             </div>
+            
 
                 <div id="linha">
                     <div class="linha1"></div>
@@ -51,5 +52,28 @@
             <p class="Sobre">Hebrews 13:8 <br>" Jesus Christ the same yesterday, and to day, and for ever."</p>
         </div>
     </div>
+
+<script>
+        function submitToGoogleForm() {
+            const name = document.getElementById("nome").value; // Correção do ID
+            const email = document.getElementById("email").value;
+
+            const formURL = "https://docs.google.com/forms/d/e/1FAIpQLSdhwdm06XCk8Vk539GsyfRbKt-ykJ7yuKyrID46-E_yGd-bHw/formResponse"; // URL do Google Form
+
+            const formData = new FormData();
+            formData.append("entry.534219487", name); // ID do campo para nome
+            formData.append("entry.680551134", email); // ID do campo para email
+
+            fetch(formURL, {
+                method: "POST",
+                body: formData,
+                mode: "no-cors" // Pode ser mantido como no-cors, mas você não verá a resposta
+            }).then(() => {
+                alert("Informações enviadas com sucesso!");
+            }).catch((error) => {
+                console.error("Erro ao enviar para o Google Form:", error);
+            });
+        }
+</script>
 </body>
 </html>
