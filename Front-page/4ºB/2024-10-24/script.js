@@ -1,3 +1,4 @@
+
 // Capturar os elementos que terão interação em tela
 
 const menuIcon = document.querySelector("#menuIcon")
