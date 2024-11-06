@@ -49,5 +49,41 @@ function allEquals(arr){
 
 // Ex 5)
 function removeDuplicates(arr){
-    
+    let novoArr = [];
+    let cont = 0
+    for(let elemento = 0; elemento < (arr.length); elemento ++){
+        if(arr[elemento] != arr[elemento+1]){
+            novoArr[cont] = arr[elemento]
+            cont ++
+        }
+    }
+    return novoArr
 }
+// console.log(removeDuplicates([1, 2, 2, 3, 3, 3, 4, 4])); // Deve exibir: [1, 2, 3, 4]
+// console.log(removeDuplicates(["apple", "apple", "banana"])); // Deve exibir: ["apple", "banana"]
+
+// Ex 6)
+function average(arr){
+    let soma = 0
+    for(let elemento = 0; elemento < arr.length; elemento ++){
+        soma += arr[elemento]
+    }
+    let media = soma/arr.length
+    return media
+}
+// console.log(average([1, 2, 3, 4])); // Deve exibir: 2.5
+// console.log(average([10, 20, 30])); // Deve exibir: 20
+
+// Ex 7)
+function mergeArrays(arr1, arr2){
+    let novoArr = []
+    for(let elemento = 0; elemento < arr1.length; elemento ++){
+        novoArr[elemento] = arr1[elemento]
+    }
+    for(let elemento = novoArr.length-1; elemento < ((novoArr.length-1)+(arr1.length)); elemento ++){
+        novoArr[elemento] = arr2[elemento]
+    }
+    return novoArr
+}
+ console.log(mergeArrays([1, 2], [3, 4])); // Deve exibir: [1, 2, 3, 4]
+// console.log(mergeArrays(["apple"], ["banana", "cherry"])); // Deve exibir: ["apple", "banana", "cherry"]
