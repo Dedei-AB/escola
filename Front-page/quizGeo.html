@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz de Afinidade de Cursos</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f4f7fa;
+    }
+    .container {
+      max-width: 800px;
+      margin-top: 40px;
+    }
+    .card {
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+    }
+    .card-body {
+      background-color: #fff;
+    }
+    h1 {
+      font-family: 'Roboto', sans-serif;
+      color: #343a40;
+    }
+    .btn-submit {
+      background-color: #007bff;
+      color: white;
+      border-radius: 50px;
+      padding: 12px 40px;
+      font-size: 1.2rem;
+      margin-top: 20px;
+    }
+    .result {
+      font-size: 1.2rem;
+      color: #007bff;
+      margin-top: 30px;
+    }
+    .form-check-label {
+      font-size: 1.1rem;
+    }
+    .quiz-container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+    }
+    .form-check {
+      margin-bottom: 15px;
+    }
+    .text-center a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .text-center a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="container quiz-container">
+    <h1 class="text-center">Quiz de Afinidade de Cursos</h1>
+    <form id="quizForm">
+      <!-- Pergunta 1 -->
+      <div class="card">
+        <div class="card-body">
+          <p><strong>1. Qual ambiente de trabalho você mais se identifica?</strong></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" value="administracao=2,ciencias_contabeis=1">
+            <label class="form-check-label">Escritório, gerenciando pessoas e processos</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" value="ciencias_contabeis=2,engenharia_quimica=1">
+            <label class="form-check-label">Laboratório, desenvolvendo novas soluções</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" value="historia=2,pedagogia=1">
+            <label class="form-check-label">Sala de aula, compartilhando conhecimento</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q1" value="computacao=2,engenharia_eletronica=1">
+            <label class="form-check-label">Computador, programando e criando novas tecnologias</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pergunta 2 -->
+      <div class="card">
+        <div class="card-body">
+          <p><strong>2. Qual atividade você mais gosta de fazer?</strong></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" value="administracao=2,ciencias_economicas=1">
+            <label class="form-check-label">Organizar eventos e planejar</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" value="ciencias_economicas=2,computacao=1">
+            <label class="form-check-label">Analisar dados e trabalhar com finanças</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" value="pedagogia=2,historia=1">
+            <label class="form-check-label">Ensinar e educar as próximas gerações</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q2" value="computacao=2,engenharia_ambiental=1">
+            <label class="form-check-label">Programar e desenvolver soluções tecnológicas</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pergunta 3 -->
+      <div class="card">
+        <div class="card-body">
+          <p><strong>3. Qual é o seu tema de interesse?</strong></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q3" value="geografia=2,engenharia_ambiental=1">
+            <label class="form-check-label">Meio ambiente e geografia</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q3" value="engenharia_civil=2,engenharia_quimica=1">
+            <label class="form-check-label">Construção e desenvolvimento de produtos químicos</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q3" value="matematica=2,ciencias_economicas=1">
+            <label class="form-check-label">Números, contas e lógica</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q3" value="historia=2,letras=1">
+            <label class="form-check-label">Humanidades e linguagens</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pergunta 4 -->
+      <div class="card">
+        <div class="card-body">
+          <p><strong>4. Você prefere trabalhar com:</strong></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q4" value="engenharia_alimentos=2,turismo_meio_ambiente=1">
+            <label class="form-check-label">Alimentos e produção sustentável</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q4" value="administracao=2,producao_agroindustrial=1">
+            <label class="form-check-label">Gestão e processos</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q4" value="engenharia_civil=2,engenharia_ambiental=1">
+            <label class="form-check-label">Construção e infraestrutura sustentável</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q4" value="letras=2,pedagogia=1">
+            <label class="form-check-label">Linguagens e educação</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pergunta 5 -->
+      <div class="card">
+        <div class="card-body">
+          <p><strong>5. Você se considera mais:</strong></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q5" value="engenharia_civil=2,computacao=1">
+            <label class="form-check-label">Lógico e analítico</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q5" value="pedagogia=2,historia=1">
+            <label class="form-check-label">Criativo e comunicativo</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q5" value="ciencias_economicas=2,engenharia_alimentos=1">
+            <label class="form-check-label">Estratégico e econômico</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pergunta 6 -->
+      <div class="card">
+        <div class="card-body">
+          <p><strong>6. O que te motiva a estudar?</strong></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q6" value="engenharia_quimica=2,matematica=1">
+            <label class="form-check-label">Resolver problemas complexos e desafios técnicos</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q6" value="administracao=2,producao_agroindustrial=1">
+            <label class="form-check-label">Gerenciar processos e melhorar o mundo ao meu redor</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q6" value="engenharia_ambiental=2,ciencias_contabeis=1">
+            <label class="form-check-label">Proteger o meio ambiente e os recursos naturais</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pergunta 7 -->
+      <div class="card">
+        <div class="card-body">
+          <p><strong>7. Em relação ao seu futuro profissional, você se vê:</strong></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q7" value="turismo_meio_ambiente=2,engenharia_civil=1">
+            <label class="form-check-label">Trabalhando com sustentabilidade e preservação</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q7" value="historia=2,letras=1">
+            <label class="form-check-label">Fazendo a diferença através da educação e da história</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q7" value="computacao=2,engenharia_ambiental=1">
+            <label class="form-check-label">Desenvolvendo tecnologias para um mundo melhor</label>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pergunta 8 -->
+      <div class="card">
+        <div class="card-body">
+          <p><strong>8. O que você pensa sobre a inovação tecnológica?</strong></p>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q8" value="engenharia_quimica=2,computacao=1">
+            <label class="form-check-label">Acho essencial para resolver problemas globais</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="q8" value="engenharia_ambiental=2,pedagogia=1">
+            <label class="form-check-label">Eu acredito que a inovação deve ser voltada para a educação e o meio ambiente</label>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center">
+        <button type="submit" class="btn btn-submit">Ver Resultado</button>
+      </div>
+    </form>
+
+    <div id="result" class="result text-center"></div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $('#quizForm').on('submit', function(e) {
+        e.preventDefault();
+
+        let totalScore = {
+          administracao: 0,
+          ciencias_contabeis: 0,
+          engenharia_quimica: 0,
+          historia: 0,
+          pedagogia: 0,
+          computacao: 0,
+          ciencias_economicas: 0,
+          geografia: 0,
+          engenharia_ambiental: 0,
+          matematica: 0,
+          letras: 0,
+          engenharia_civil: 0,
+          producao_agroindustrial: 0,
+          turismo_meio_ambiente: 0,
+          engenharia_alimentos: 0
+        };
+
+        // Percorre todas as perguntas
+        $('input[type="radio"]:checked').each(function () {
+          let value = $(this).val().split(",");
+          value.forEach(function (item) {
+            let [course, score] = item.split("=");
+            totalScore[course] += parseInt(score);
+          });
+        });
+
+        // Calcula o curso mais indicado
+        let bestCourse = Object.keys(totalScore).reduce((a, b) => totalScore[a] > totalScore[b] ? a : b);
+        
+        // Exibe o resultado
+        let resultText = `Seu curso mais indicado é: <strong>${bestCourse.replace(/_/g, ' ').toUpperCase()}</strong>`;
+        $('#result').html(resultText);
+      });
+    });
+  </script>
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Instituições e Cursos</h2>
+  
+    <!-- Unespar -->
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        <h3>🎓 <a href="https://campomourao.unespar.edu.br/" target="_blank" class="text-white text-decoration-none">Unespar - Campus Campo Mourão</a></h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item"><strong>💼 Administração - Bacharelado</strong><br>Focado no desenvolvimento de habilidades gerenciais para empresas e organizações públicas e privadas.</li>
+          <li class="list-group-item"><strong>💰 Ciências Contábeis - Bacharelado</strong><br>Formação de contadores para atuar em gestão financeira, planejamento tributário e auditoria.</li>
+          <li class="list-group-item"><strong>📊 Ciências Econômicas - Bacharelado</strong><br>Base sólida em teorias econômicas para compreender o comportamento econômico em diferentes contextos.</li>
+          <li class="list-group-item"><strong>🔧 Engenharia de Produção Agroindustrial - Bacharelado</strong><br>Otimização de processos produtivos no setor agroindustrial, integrando engenharia e administração.</li>
+          <li class="list-group-item"><strong>🌍 Geografia - Bacharelado</strong><br>Análise e interpretação das dinâmicas do espaço geográfico, considerando aspectos físicos, sociais e ambientais.</li>
+          <li class="list-group-item"><strong>🌍 Geografia - Licenciatura</strong><br>Formação de professores para o ensino de Geografia no ensino fundamental e médio.</li>
+          <li class="list-group-item"><strong>📚 História - Licenciatura</strong><br>Formação de professores e pesquisadores na área de História, com foco no ensino e interpretação de processos históricos.</li>
+          <li class="list-group-item"><strong>📖 Letras – Português e Inglês - Licenciatura</strong><br>Preparação para a docência e outras atividades relacionadas à linguagem.</li>
+          <li class="list-group-item"><strong>➗ Matemática - Licenciatura</strong><br>Formação de professores com sólida base em Matemática e didática.</li>
+          <li class="list-group-item"><strong>👶 Pedagogia - Licenciatura</strong><br>Capacitação para o ensino na educação infantil e anos iniciais do ensino fundamental, além de gestão educacional.</li>
+          <li class="list-group-item"><strong>🌱 Turismo e Meio Ambiente - Bacharelado</strong><br>Promoção do turismo sustentável e conservação ambiental.</li>
+        </ul>
+        <div class="text-center mt-3 text-white">
+          <a href="https://campomourao.unespar.edu.br/" class="btn btn-success text-white" target="_blank">Visite o site da Unespar</a>
+        </div>
+      </div>
+    </div>
+  
+    <!-- UTFPR -->
+    <div class="card">
+      <div class="card-header bg-info text-white">
+        <h3>🎓 <a href="https://www.utfpr.edu.br/campus/campomourao" target="_blank" class="text-white text-decoration-none">UTFPR - Campus Campo Mourão</a></h3>
+      </div>
+      <div class="card-body">
+        <ul class="list-group">
+          <li class="list-group-item"><strong>💻 Ciência da Computação</strong><br>Desenvolvimento de software, ciência de dados, segurança da informação e inteligência artificial.</li>
+          <li class="list-group-item"><strong>🌱 Engenharia Ambiental</strong><br>Resolução de problemas ambientais e desenvolvimento sustentável.</li>
+          <li class="list-group-item"><strong>🏗️ Engenharia Civil</strong><br>Projetos e gerenciamento de obras de infraestrutura.</li>
+          <li class="list-group-item"><strong>🍔 Engenharia de Alimentos</strong><br>Atuação em todas as etapas da cadeia produtiva de alimentos.</li>
+          <li class="list-group-item"><strong>🔌 Engenharia Eletrônica</strong><br>Desenvolvimento e aplicação de tecnologias eletrônicas e automação industrial.</li>
+          <li class="list-group-item"><strong>⚗️ Engenharia Química</strong><br>Conhecimentos em processos químicos e industriais, com atuação em petroquímica e farmacêutica.</li>
+          <li class="list-group-item"><strong>🧪 Licenciatura em Química</strong><br>Formação de professores para o ensino de Química.</li>
+          <li class="list-group-item"><strong>🍲 Tecnologia em Alimentos</strong><br>Produção e controle de alimentos, garantindo qualidade e segurança na indústria alimentícia.</li>
+        </ul>
+        <div class="text-center mt-3 text-white">
+          <a href="https://www.utfpr.edu.br/campus/campomourao" class="btn btn-success text-white" target="_blank">Visite o site da UTFPR</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
