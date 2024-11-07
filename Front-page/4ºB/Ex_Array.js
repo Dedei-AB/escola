@@ -51,14 +51,15 @@ function allEquals(arr){
 function removeDuplicates(arr){
     let novoArr = [];
     for(let elemento = 0; elemento <arr.length; elemento ++){
-        let duplicado = false
+        let ehDuplicado = false
+        
         for(coisa of novoArr){
-            if(coisa === arr[elemento]){
-                duplicado = true
+            if(coisa == arr[elemento]){
+                ehDuplicado = true
                 break
             }
         }
-        if(!duplicado){
+        if(!ehDuplicado){
             novoArr.push(arr[elemento])
         }
     }
