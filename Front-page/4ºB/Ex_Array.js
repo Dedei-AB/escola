@@ -1,7 +1,7 @@
 // Ex 1)
 function sumArray(arr){
     let soma = 0;
-    for (let elemento = 0; elemento < arr.length; elemento ++){
+    for (let elemento of arr){
         soma += arr[elemento]
     }
     return soma
@@ -50,11 +50,16 @@ function allEquals(arr){
 // Ex 5)
 function removeDuplicates(arr){
     let novoArr = [];
-    let cont = 0
-    for(let elemento = 0; elemento < (arr.length); elemento ++){
-        if(arr[elemento] != arr[elemento+1]){
-            novoArr[cont] = arr[elemento]
-            cont ++
+    for(let elemento = 0; elemento <arr.length; elemento ++){
+        let duplicado = false
+        for(coisa of novoArr){
+            if(coisa === arr[elemento]){
+                duplicado = true
+                break
+            }
+        }
+        if(!duplicado){
+            novoArr.push(arr[elemento])
         }
     }
     return novoArr
@@ -80,10 +85,46 @@ function mergeArrays(arr1, arr2){
     for(let elemento = 0; elemento < arr1.length; elemento ++){
         novoArr[elemento] = arr1[elemento]
     }
-    for(let elemento = novoArr.length-1; elemento < ((novoArr.length-1)+(arr1.length)); elemento ++){
-        novoArr[elemento] = arr2[elemento]
+    for(let elemento = 0; elemento < arr2.length; elemento ++){
+        novoArr[arr1.length + elemento] = arr2[elemento]  
     }
     return novoArr
 }
- console.log(mergeArrays([1, 2], [3, 4])); // Deve exibir: [1, 2, 3, 4]
+// console.log(mergeArrays([1, 2], [3, 4])); // Deve exibir: [1, 2, 3, 4]
 // console.log(mergeArrays(["apple"], ["banana", "cherry"])); // Deve exibir: ["apple", "banana", "cherry"]
+
+// Ex 8)
+function getEvenNumbers(arr){
+    let numerosPares = []
+
+    for(elemento of arr){
+        if(elemento%2 == 0){
+            numerosPares.push(elemento)
+        }
+    }
+    return numerosPares
+}
+// console.log(getEvenNumbers([1, 2, 3, 4, 5, 6])); // Deve exibir: [2, 4, 6]
+// console.log(getEvenNumbers([10, 15, 20, 25])); // Deve exibir: [10, 20]
+
+// Ex 9)
+function reverseArray(arr){
+    let arrayInverso = []
+    for(let elemento = arr.length-1; elemento > -1; elemento --){
+        arrayInverso.push(arr[elemento])
+    }
+    return arrayInverso
+}
+// console.log(reverseArray([1, 2, 3, 4])); // Deve exibir: [4, 3, 2, 1]
+// console.log(reverseArray(["apple", "banana"])); // Deve exibir: ["banana", "apple"]
+
+// Ex 10)
+function findIndex(arr, element){
+    for(let elemento = 0; elemento < arr.length; elemento ++){
+        if(arr[elemento] == element){
+            return elemento
+        }
+    }return -1
+}
+// console.log(findIndex([1, 2, 3, 4], 3)); // Deve exibir: 2
+// console.log(findIndex(["apple", "banana"], "cherry")); // Deve exibir: -1
