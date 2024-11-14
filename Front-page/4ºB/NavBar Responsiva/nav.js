@@ -6,7 +6,6 @@ const sidebar = document.querySelector("#sidebar")
 const conteudo = document.querySelector(".conteudo")
 
 // Definir qual interação (evento) o elemento terá
-sidebar.style.display = 'none'
 closeIcon.style.display = 'none'
 
 menuIcon.addEventListener("click", showSidebar)
@@ -17,16 +16,14 @@ closeIcon.addEventListener("click", hideSidebar)
 
 function showSidebar(){
     // sidebar.style.display = "flex"    
-    sidebar.style.display = 'flex'
-    conteudo.style.display = 'none'
+    sidebar.style.top = "15vh"
     menuIcon.style.display = 'none'
     closeIcon.style.display = 'flex'
 }
 
 function hideSidebar(){
     // sidebar.style.display = "none"    
-    sidebar.style.display = 'none'
-    conteudo.style.display = 'flex'
+    sidebar.style.top = "-100%"
     closeIcon.style.display = 'none'
     menuIcon.style.display = 'flex'
 }

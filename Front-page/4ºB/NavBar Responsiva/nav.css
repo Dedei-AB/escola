@@ -21,6 +21,11 @@ nav{
     background-color: rgb(123, 187, 26);
     display: flex;
     align-items: center;
+    z-index: 2;
+}
+
+.pedrin{
+    z-index: 2;
 }
 
 nav ul{
@@ -32,6 +37,7 @@ nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 2;
 }
 
 nav .logo{
@@ -66,20 +72,23 @@ a{
 #sidebar{
     height: 85vh;
     width: 100%;
-    background-color: rgb(84, 139, 0);;
+    top: -100%;
+    position: fixed;
+    background-color: rgb(84, 139, 0);
     
-    display: none;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    transition: 0.3s;
+    justify-content: top;
+    transition: all 1s;
+    padding-top: 5rem;
+    z-index: 1;
 }
 
 @media (max-width: 767px){
     #sidebar{
         display: flex;
     }
-
     .Pc{
         display: none;
     }
@@ -88,4 +97,7 @@ a{
     .icon{
         display: none;
     }
-}
+    #sidebar{
+        display: none;
+    }
+} 
