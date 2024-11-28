@@ -2,7 +2,7 @@
 function sumArray(arr){
     let soma = 0;
     for (let elemento of arr){
-        soma += arr[elemento]
+        soma += elemento
     }
     return soma
 }
@@ -38,7 +38,7 @@ function countOccurrences(arr, element){
 
 // Ex 4)
 function allEquals(arr){
-    for(let elemento = 1; elemento < (arr.length-1); elemento ++){
+    for(let elemento = 1; elemento < (arr.length); elemento ++){
         if(arr[elemento] != arr[0]){
             return false;
         }
