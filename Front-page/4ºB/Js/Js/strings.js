@@ -41,7 +41,7 @@ function isPalindrome(str){
 
 // 4)
 function countOccurrences(str, char){
-    let palavra = str.split('')
+    let palavra = str
     let caracter = char
     let contChar = 0
     for(let i of palavra){
@@ -52,7 +52,7 @@ function countOccurrences(str, char){
 }
 
 //console.log(countOccurrences("banana", "a")); //Deve exibir: 3
-//console.log(countOccurrences("hello worldl", "l")); //Deve exibir: 3
+//console.log(countOccurrences("hello world", "l")); //Deve exibir: 3
 
 // 5)
 function getInitials(name){
@@ -98,9 +98,9 @@ function trimSpaces(str){
 // 9)
 function replaceChar(str, oldChar, newChar){
     let texto = str.split(/\s+/)
-    for(let i = 0; i<texto.length; i++){
+    for(let i in texto){
         let textoNovo = ''
-        for(let j = 0; j<texto[i].length; j++){
+        for(let j in texto[i]){
             if(texto[i][j]== oldChar){
                 textoNovo += newChar
             }else{

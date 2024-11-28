@@ -5,7 +5,7 @@ let carro = {
     ano: 2019
 };
 
-// console.log(carro);
+ console.log(carro);
 
 // 2)
 // console.log(carro["marca"]);
@@ -91,4 +91,4 @@ let usuarios = [
 ]
 
 let pessoas = usuarios.map(usuarios => `${usuarios.nome}, ${usuarios.email}`)
-console.log(pessoas)
+//console.log(pessoas)
