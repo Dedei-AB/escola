@@ -1,29 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://accounts.google.com/gsi/client" async defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternar Tema</title>
+  <style>
+    /* Tema Claro */
+    :root {
+      --fundo-claro: #ffffff;
+      --texto-claro: #000000;
+      --fundo-escuro: #121212;
+      --texto-escuro: #e0e0e0;
+    }
+
+    body {
+      background-color: var(--fundo-claro);
+      color: var(--texto-claro);
+      font-family: Arial, sans-serif;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    body.tema-escuro {
+      background-color: var(--fundo-escuro);
+      color: var(--texto-escuro);
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
-<style>
-    div{
-        height: 100vh;
-        width: 100vw;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    a{
-        width: 0.1px;
-        height: 0.1px;
-        background-color: black;
-    }
-</style>
 <body>
-<div>
-    <a href="https://youtube.com/watch?v=jmnzm2jvI3U"></a>
-</div>
-    
+  <h1>Alterne entre Tema Claro e Escuro</h1>
+  <button id="toggle-theme">Alternar Tema</button>
+
+  <script>
+    const botaoTema = document.getElementById("toggle-theme");
+
+    botaoTema.addEventListener("click", () => {
+      document.body.classList.toggle("tema-escuro");
+    });
+  </script>
 </body>
 </html>
