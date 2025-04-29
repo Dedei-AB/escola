@@ -4,6 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lâmpada</title>
+    <script type="module" defer>
+      const lampada = document.getElementById("lampada");
+      lampada.addEventListener("click", () => {
+        if (
+          lampada.src ==
+          "https://file.notion.so/f/f/48a2f079-68a5-4bb5-99eb-51881ae2de09/71f26421-6270-427b-9957-c6a65123a79e/lampada-on.jpg?table=block&id=d3312970-75fa-451e-b926-2a0407fe6fb8&spaceId=48a2f079-68a5-4bb5-99eb-51881ae2de09&expirationTimestamp=1745913600000&signature=KQqJhaIDSc8FT8hFvNteHu9jTzUi583CBvZupW6vFp0&downloadName=lampada-on.jpg"
+        ) {
+          lampada.src =
+            "https://file.notion.so/f/f/48a2f079-68a5-4bb5-99eb-51881ae2de09/b719fd55-0b02-4560-901d-018517e9664c/lampada-off.jpg?table=block&id=4741bb75-64b6-4484-9d78-fd26a4fafdb8&spaceId=48a2f079-68a5-4bb5-99eb-51881ae2de09&expirationTimestamp=1745913600000&signature=rQFpNryVeT355XE7GEQkipKexBPH0P7u-cyQlY6BFlA&downloadName=lampada-off.jpg";
+        } else {
+          lampada.src =
+            "https://file.notion.so/f/f/48a2f079-68a5-4bb5-99eb-51881ae2de09/71f26421-6270-427b-9957-c6a65123a79e/lampada-on.jpg?table=block&id=d3312970-75fa-451e-b926-2a0407fe6fb8&spaceId=48a2f079-68a5-4bb5-99eb-51881ae2de09&expirationTimestamp=1745913600000&signature=KQqJhaIDSc8FT8hFvNteHu9jTzUi583CBvZupW6vFp0&downloadName=lampada-on.jpg";
+        }
+      });
+    </script>
   </head>
   <style>
     * {
@@ -36,20 +51,4 @@
       />
     </div>
   </body>
-
-  <script type="module" defer>
-    const lampada = document.getElementById("lampada");
-    lampada.addEventListener("click", () => {
-      if (
-        lampada.src ==
-        "https://file.notion.so/f/f/48a2f079-68a5-4bb5-99eb-51881ae2de09/71f26421-6270-427b-9957-c6a65123a79e/lampada-on.jpg?table=block&id=d3312970-75fa-451e-b926-2a0407fe6fb8&spaceId=48a2f079-68a5-4bb5-99eb-51881ae2de09&expirationTimestamp=1745913600000&signature=KQqJhaIDSc8FT8hFvNteHu9jTzUi583CBvZupW6vFp0&downloadName=lampada-on.jpg"
-      ) {
-        lampada.src =
-          "https://file.notion.so/f/f/48a2f079-68a5-4bb5-99eb-51881ae2de09/b719fd55-0b02-4560-901d-018517e9664c/lampada-off.jpg?table=block&id=4741bb75-64b6-4484-9d78-fd26a4fafdb8&spaceId=48a2f079-68a5-4bb5-99eb-51881ae2de09&expirationTimestamp=1745913600000&signature=rQFpNryVeT355XE7GEQkipKexBPH0P7u-cyQlY6BFlA&downloadName=lampada-off.jpg";
-      } else {
-        lampada.src =
-          "https://file.notion.so/f/f/48a2f079-68a5-4bb5-99eb-51881ae2de09/71f26421-6270-427b-9957-c6a65123a79e/lampada-on.jpg?table=block&id=d3312970-75fa-451e-b926-2a0407fe6fb8&spaceId=48a2f079-68a5-4bb5-99eb-51881ae2de09&expirationTimestamp=1745913600000&signature=KQqJhaIDSc8FT8hFvNteHu9jTzUi583CBvZupW6vFp0&downloadName=lampada-on.jpg";
-      }
-    });
-  </script>
 </html>
