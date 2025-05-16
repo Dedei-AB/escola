@@ -120,9 +120,7 @@ function escolheOperador(calculadora, operador) {
  * - Atualizar o display
  */
 function executaCalculo(calculadora) {
-  if (calculadora.operandoAtual == "") {
-    return;
-  } else if (calculadora.operandoAtual == 0 && calculadora.operador == "÷") {
+  if (calculadora.operandoAtual == 0 && calculadora.operador == "÷") {
     calculadora.displayTextoElemento.innerHTML = "Indefinido";
     calculadora.bufferTextoElemento.innerHTML =
       calculadora.operandoAnterior +
@@ -143,12 +141,15 @@ function executaCalculo(calculadora) {
     } else if (calculadora.operador == "÷") {
       resultado = valor1 / valor2;
     }
-    calculadora.operandoAnterior = `${resultado}`;
+    calculadora.bufferTextoElemento.innerHTML =
+      calculadora.operandoAnterior +
+      calculadora.operador +
+      calculadora.operandoAtual;
+    calculadora.displayTextoElemento.innerHTML = resultado;
+    calculadora.operandoAnterior = "";
     calculadora.operandoAtual = "";
     calculadora.operador = "";
     console.log(calculadora);
-    calculadora.bufferTextoElemento.innerHTML = "";
-    calculadora.displayTextoElemento.innerHTML = resultado;
   }
 }
 
