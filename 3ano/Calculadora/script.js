@@ -143,7 +143,7 @@ function executaCalculo(calculadora) {
     } else if (calculadora.operador == "÷") {
       resultado = valor1 / valor2;
     }
-    calculadora.operandoAnterior = resultado;
+    calculadora.operandoAnterior = `${resultado}`;
     calculadora.operandoAtual = "";
     calculadora.operador = "";
     console.log(calculadora);
