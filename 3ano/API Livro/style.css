@@ -48,6 +48,10 @@ input:hover{
     transition: .5s;
 }
 
+h2{
+    margin-bottom: 1rem;
+}
+
 button{
     margin-top: 1rem;
     height: 2rem;
@@ -72,4 +76,8 @@ button:hover{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.dados-livro{
+    max-width: 60vw;
 }
