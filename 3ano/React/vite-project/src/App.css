@@ -1,8 +1,11 @@
 body {
-  margin: 0;
   background-color: rgb(123, 123, 123);
+  margin: 0;
 }
 
-app {
+.app {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
 }
