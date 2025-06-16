@@ -6,7 +6,7 @@ export default function TarefaItem({
   return (
     <li>
       <span
-        style={{ textDecoration: tarefa.concluida ? "line-throug" : "none" }}
+        style={{ textDecoration: tarefa.concluida ? "line-through" : "none" }}
       >
         {tarefa.descricao}
       </span>
