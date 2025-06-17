@@ -1,18 +1,29 @@
-function Conteudo({ calcularImc }) {
+import { useState } from "react";
+import Calculo from "./Calculo";
+
+function Conteudo() {
+  const [altura, setAltura] = useState(1.65);
+  const [peso, setPeso] = useState(65);
+  const [resultado, setResultado] = useState("");
+
   return (
     <div>
       <h1>Calculadora IMC</h1>
 
       <div className="numeros">
-        <input type="number" />
-        <input type="number" />
-        <button onClick={calcularImc}>Calcular IMC</button>
-      </div>
+        <h2>Altura</h2>
+        <input
+          type="number"
+          onChange={(a) => setAltura(Number(a.target.value))}
+        />
+        <h2>Peso</h2>
+        <input
+          type="number"
+          onChange={(p) => setPeso(Number(p.target.value))}
+        />
 
-      <h3>Seu IMC:</h3>
-      <p></p>
-      <h3>Categoria:</h3>
-      <p></p>
+        <button onClick={() => Calculo}>Calcular IMC</button>
+      </div>
     </div>
   );
 }

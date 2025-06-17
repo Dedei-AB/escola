@@ -3,9 +3,11 @@ import Conteudo from "./Conteudo";
 import "./App.css";
 
 function App() {
-  <>
-    <Conteudo />
-  </>;
+  return (
+    <>
+      <Conteudo />
+    </>
+  );
 }
 
 export default App;
