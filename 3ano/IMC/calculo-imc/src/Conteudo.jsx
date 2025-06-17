@@ -5,6 +5,7 @@ function Conteudo() {
   const [altura, setAltura] = useState(1.65);
   const [peso, setPeso] = useState(65);
   const [resultado, setResultado] = useState("");
+  const [verdade, setVerdade] = useState(false);
 
   return (
     <div>
@@ -22,7 +23,9 @@ function Conteudo() {
           onChange={(p) => setPeso(Number(p.target.value))}
         />
 
-        <button onClick={() => Calculo}>Calcular IMC</button>
+        <button onClick={() => setVerdade(true)}>Calcular IMC</button>
+
+        {verdade && <Calculo altura={altura} peso={peso} />}
       </div>
     </div>
   );

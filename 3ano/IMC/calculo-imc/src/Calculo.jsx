@@ -1,14 +1,38 @@
-import Conteudo from "./Conteudo";
+function Calculo({ altura, peso }) {
+  const calcularImc = () => {
+    return peso / altura ** 2;
+  };
 
-function Calculo() {
-  const [altura, setAltura] = useState(1.65);
-  const [peso, setPeso] = useState(65);
+  const categoria = () => {
+    const imc = calcularImc();
+    let categoria = "";
 
-  const calculadora = peso / altura ** 2;
+    if (imc < 18.5) {
+      categoria = "Baixo peso";
+    } else if (imc < 25) {
+      categoria = "Peso normal";
+    } else if (imc < 30) {
+      categoria = "Excesso de peso";
+    } else if (imc < 35) {
+      categoria = "Obesidade de classe 1";
+    } else if (imc < 40) {
+      categoria = "Obesidade de classe 2";
+    } else {
+      categoria = "Obesidade de classe 3";
+    }
+
+    return categoria;
+  };
+
+  const imc = calcularImc();
 
   return (
     <>
-      <Conteudo calcularImc={calculadora} />
+      <h2>Valor do IMC:</h2>
+      <p>{imc.toFixed(2)}</p>
+
+      <h2>Categoria</h2>
+      <p>{categoria()}</p>
     </>
   );
 }
