@@ -1,12 +1,12 @@
-import { useState } from "react";
+import { useState } from 'react';
 
-export default function TarefaInput({ onAddTarefa }) {
-  const [descricao, setDescricao] = useState("");
+function TarefaInput({ onAddTarefa }) {
+  const [descricao, setDescricao] = useState('');
 
   const adicionar = () => {
     if (descricao.trim()) {
       onAddTarefa(descricao);
-      setDescricao("");
+      setDescricao('');
     }
   };
 
@@ -16,9 +16,11 @@ export default function TarefaInput({ onAddTarefa }) {
         type="text"
         value={descricao}
         onChange={(e) => setDescricao(e.target.value)}
-        placeholder="Digite o nome da tarefa:"
+        placeholder="Digite uma tarefa"
       />
       <button onClick={adicionar}>Adicionar</button>
     </div>
   );
 }
+
+export default TarefaInput;

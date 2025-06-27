@@ -1,4 +1,4 @@
-import TarefaItem from "./TarefaItem";
+import TarefaItem from './TarefaItem';
 
 function TarefaList({ tarefas, onConcluir, onRemoverTarefa }) {
   return (

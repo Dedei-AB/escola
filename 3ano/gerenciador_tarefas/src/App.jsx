@@ -1,25 +1,26 @@
-import TarefaInput from "./TarefaInput";
-import TarefaList from "./TarefaList";
-import { useState } from "react";
+import React, { useState } from 'react';
+import TarefaInput from './TarefaInput';
+import TarefaList from './TarefaList';
+//import './App.css'
 
 function App() {
-  const [arr_tarefas, setTarefas] = useState([]);
+  const [tarefas, setTarefas] = useState([]);
 
   const adicionarTarefa = (descricao) => {
     const novaTarefa = { id: Date.now(), descricao, concluida: false };
-    setTarefas([...arr_tarefas, novaTarefa]);
+    setTarefas([...tarefas, novaTarefa]);
   };
 
-  const concluirTarefa = (id) => {
+  const alternarConcluir = (id) => {
     setTarefas(
-      arr_tarefas.map((tarefa) =>
+      tarefas.map((tarefa) => 
         tarefa.id === id ? { ...tarefa, concluida: !tarefa.concluida } : tarefa
       )
     );
   };
 
   const removerTarefa = (id) => {
-    setTarefas(arr_tarefas.filter((tarefa) => tarefa.id !== id));
+    setTarefas(tarefas.filter((tarefa) => tarefa.id !== id));
   };
 
   return (
@@ -27,8 +28,8 @@ function App() {
       <h1>Gerenciador de Tarefas</h1>
       <TarefaInput onAddTarefa={adicionarTarefa} />
       <TarefaList
-        tarefas={arr_tarefas}
-        onConcluir={concluirTarefa}
+        tarefas={tarefas}
+        onConcluir={alternarConcluir}
         onRemoverTarefa={removerTarefa}
       />
     </div>
