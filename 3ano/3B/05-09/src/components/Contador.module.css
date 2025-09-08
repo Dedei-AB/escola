@@ -1,13 +1,18 @@
 .container {
-  max-width: 90rem;
+  padding: 0.5rem;
+  width: 27rem;
+  height: 32rem;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
+  background-color: var(--gray-600);
 }
 
 .titulo {
-  color: var(--primary);
+  color: var(--gray-100);
+  font-size: 2rem;
 }
 
 .contadorDisplay {
@@ -17,7 +22,11 @@
 }
 
 .botao {
+  font-size: 1.4rem;
+  color: var(--gray-900);
   padding: 2rem;
+  width: auto;
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
